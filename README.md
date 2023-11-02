@@ -1,6 +1,6 @@
 # robosys2023
 
-![test](https://github.com/shirakawasojyu/robosys2023/actions/runs/6727894808)
+[![test](https://github.com/shirakawasojyu/robosys2023/actions/workflows/test.yml/badge.svg)](https://github.com/shirakawasojyu/robosys2023/actions/workflows/test.yml)
 
 目的
 ・標準入力から読み込んだ数字を足し算してくれるソフトです。
