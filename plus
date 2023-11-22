@@ -11,3 +11,10 @@ for line in sys.stdin:
     except:ans += float(line)
 
 print(ans)
+
+bn = format(ans, 'b')
+print(bn)
+
+
+
+
