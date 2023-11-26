@@ -3,7 +3,7 @@
 [![test](https://github.com/shirakawasojyu/robosys2023/actions/workflows/test.yml/badge.svg)](https://github.com/shirakawasojyu/robosys2023/actions/workflows/test.yml)
 
 # 目的
-・標準入力から読み込んだ数字を足し算し,2進数への変換とbit数表記をするソフトです. \n
+・標準入力から読み込んだ数字を足し算し,2進数への変換とbit数表記をするソフトです.   
 ・足し算結果, 2進数, bit数の順に表示されます.
 
 # ダウンロード方法
@@ -67,14 +67,14 @@ out=$(echo | ./plus)
 を消去か,コメントアウトしてください.
 
 ## ソフトウェア
-・Python
+・Python  
 	テスト済み： ver3.7 ~ 3.10
 
 ## テスト環境
 ・Ubuntu 22.04.2
 
 ## ライセンス
-・このパッケージのコードは,下記のスライド(CC-BY-SA 4.0 by Ryuichi Ueda)のものを,本人の許可を得て自身の著作としたものです. \n
-https://github.com/ryuichiueda/my_slides/tree/master/robosys_2022 \n
-・このソフトウェアパッケージは3条項BSDライセンスの下,再頒布及び使用が許可されます. \n
+・このパッケージのコードは,下記のスライド(CC-BY-SA 4.0 by Ryuichi Ueda)のものを,本人の許可を得て自身の著作としたものです.  
+https://github.com/ryuichiueda/my_slides/tree/master/robosys_2022  
+・このソフトウェアパッケージは3条項BSDライセンスの下,再頒布及び使用が許可されます.  
 ・©2023 shirakawasojyu
