@@ -10,11 +10,10 @@ for line in sys.stdin:
 
     except:ans += float(line)
 
-print(ans)
-
 bn = format(ans, 'b')
-print(bn)
 
-print("和は" + str(ans) + "で2進数にすると" + str(bn))
+bit = len(bn) 
+
+print(str(ans) + ", " + str(bn) + ", " + str(bit))
 
 
