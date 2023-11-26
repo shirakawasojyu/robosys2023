@@ -12,9 +12,9 @@ for line in sys.stdin:
 
 print(ans)
 
-#bn = format(ans, 'b')
-#print(bn)
+bn = format(ans, 'b')
+print(bn)
 
-
+print("和は" + str(ans) + "で2進数にすると" + str(bn))
 
 
