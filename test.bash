@@ -10,20 +10,20 @@ ng () {
 res=0
 
 ### I/O TEST ###
-out=$(seq 5 | ./plus)
+out=$(echo 512 256 256 > nums)
+out=$(cat nums | tr ' ' ' \n' | ./plus)
 
-[ "${out}" = 15 ] || ng ${LINENO}
-#[ "${out}" = 15 ] || ng ${LINENO}
+[ "${out}" = 1024, 10000000000, 11 ] || ng ${LINENO}
 
 
-### STRAGE INPUT ###
-#out=$(echo あ | ./plus)
-#[ "$?" = 1 ]      || ng ${LINENO}
-#[ "${out}" = "" ] || ng ${LINENO}
+### STRANGE INPUT ###
+out=$(echo あ | ./plus)
+[ "$?" = 1 ]      || ng ${LINENO}
+[ "${out}" = "" ] || ng ${LINENO}
 
-#out=$(echo | ./plus)
-#[ "$?" = 1 ]      || ng ${LINENO}
-#[ "${out}" = "" ] || ng ${LINENO}
+out=$(echo | ./plus)
+[ "$?" = 1 ]      || ng ${LINENO}
+[ "${out}" = "" ] || ng ${LINENO}
 
 
 [ "$res" = 0 ] && echo OK
