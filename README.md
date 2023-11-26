@@ -9,7 +9,7 @@
 # ダウンロード方法
 *以下を端末で実行する
 ```
-$ git@github.com:shirakawasojyu/robosys2023.git
+$ git clone git@github.com:shirakawasojyu/robosys2023.git
 $ cd robosys2023
 ```
 # 使用例
@@ -28,8 +28,29 @@ $ cd robosys2023
 # 注意点
 test.bashを実行すると,不正な入力として,「あ」と「　」が入力されるようになっており,
 ```
-ValueError: could not convert string to flort: 'あ\n'
-ValueError: could not convert string to flort: '\n'
+Traceback (most recent call last):
+  File "/home/shirakawa/robosys2023/./plus", line 9, in <module>
+    try: ans += int(line)
+ValueError: invalid literal for int() with base 10: 'あ\n'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/shirakawa/robosys2023/./plus", line 11, in <module>
+    except:ans += float(line)
+ValueError: could not convert string to float: 'あ\n'
+Traceback (most recent call last):
+  File "/home/shirakawa/robosys2023/./plus", line 9, in <module>
+    try: ans += int(line)
+ValueError: invalid literal for int() with base 10: '\n'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/shirakawa/robosys2023/./plus", line 11, in <module>
+    except:ans += float(line)
+ValueError: could not convert string to float: '\n'
+OK
 ```
 が表示されますが,問題なく動作します.邪魔に感じたら,
 ```
