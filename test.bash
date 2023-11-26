@@ -10,11 +10,8 @@ ng () {
 res=0
 
 ### I/O TEST ###
-out=$(echo 512 256 256 > nums)
-out=$(cat nums | tr ' ' ' \n' | ./plus)
-
-[ "${out}" = 1024, 10000000000, 11 ] || ng ${LINENO}
-
+out=$(seq 5 | ./plus)
+[ "${out}" = "15, 1111, 4" ] || ng ${LINENO}
 
 ### STRANGE INPUT ###
 out=$(echo あ | ./plus)
