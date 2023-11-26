@@ -1,18 +1,21 @@
 # robosys2023
 
 [![test](https://github.com/shirakawasojyu/robosys2023/actions/workflows/test.yml/badge.svg)](https://github.com/shirakawasojyu/robosys2023/actions/workflows/test.yml)
+ロボットシステム学の練習用リポジトリです.
 
-# 目的
+# plusコマンド
+
+## 目的
 ・標準入力から読み込んだ数字を足し算し,2進数への変換とbit数表記をするソフトです.   
 ・足し算結果, 2進数, bit数の順に表示されます.
 
-# ダウンロード方法
+## ダウンロード方法
 *以下を端末で実行する
 ```
 $ git clone https://github.com/shirakawasojyu/robosys2023.git
 $ cd robosys2023
 ```
-# 使用例
+## 使用例
 
 ```
 例①
@@ -25,46 +28,10 @@ $ cd robosys2023
 1024, 10000000000, 11
 ```
 
-# 注意点
-test.bashを実行すると,不正な入力として,「あ」と「　」が入力されるようになっており,
-```
-Traceback (most recent call last):
-  File "/home/shirakawa/robosys2023/./plus", line 9, in <module>
-    try: ans += int(line)
-ValueError: invalid literal for int() with base 10: 'あ\n'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/shirakawa/robosys2023/./plus", line 11, in <module>
-    except:ans += float(line)
-ValueError: could not convert string to float: 'あ\n'
-Traceback (most recent call last):
-  File "/home/shirakawa/robosys2023/./plus", line 9, in <module>
-    try: ans += int(line)
-ValueError: invalid literal for int() with base 10: '\n'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/shirakawa/robosys2023/./plus", line 11, in <module>
-    except:ans += float(line)
-ValueError: could not convert string to float: '\n'
-OK
-```
-が表示されますが,問題なく動作します.邪魔に感じたら,
-```
- ### STRANGE INPUT ###
-out=$(echo あ | ./plus)
-[ "$?" = 1 ]      || ng ${LINENO}
-[ "${out}" = "" ] || ng ${LINENO}
-
-out=$(echo | ./plus)
-[ "$?" = 1 ]      || ng ${LINENO}
-[ "${out}" = "" ] || ng ${LINENO}
- 
-```
-を消去か,コメントアウトしてください.
+## 注意点
+2進数を用いる都合上,自然数のみ入力してください.  
+リポジトリにplusとplus_stdinの2つコマンドがありますが,plus_stdinはplusの足し算機能のみの下位互換となっています.  
+使用する際にはplusを使用してください.
 
 ## ソフトウェア
 ・Python  
@@ -73,7 +40,7 @@ out=$(echo | ./plus)
 ## テスト環境
 ・Ubuntu 22.04.2
 
-## ライセンス
+# ライセンス
 ・このパッケージのコードは,下記のスライド(CC-BY-SA 4.0 by Ryuichi Ueda)のものを,本人の許可を得て自身の著作としたものです.  
 https://github.com/ryuichiueda/my_slides/tree/master/robosys_2022  
 ・このソフトウェアパッケージは3条項BSDライセンスの下,再頒布及び使用が許可されます.  
