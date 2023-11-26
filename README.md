@@ -3,13 +3,13 @@
 [![test](https://github.com/shirakawasojyu/robosys2023/actions/workflows/test.yml/badge.svg)](https://github.com/shirakawasojyu/robosys2023/actions/workflows/test.yml)
 
 # 目的
-・標準入力から読み込んだ数字を足し算し,2進数への変換とbit数表記をするソフトです.
-足し算結果, 2進数, bit数の順に表示されます.
+・標準入力から読み込んだ数字を足し算し,2進数への変換とbit数表記をするソフトです. \n
+・足し算結果, 2進数, bit数の順に表示されます.
 
 # ダウンロード方法
 *以下を端末で実行する
 ```
-$ git clone git@github.com:shirakawasojyu/robosys2023.git
+$ git clone https://github.com/shirakawasojyu/robosys2023.git
 $ cd robosys2023
 ```
 # 使用例
@@ -74,7 +74,7 @@ out=$(echo | ./plus)
 ・Ubuntu 22.04.2
 
 ## ライセンス
-・このパッケージのコードは,下記のスライド(CC-BY-SA 4.0 by Ryuichi Ueda)のものを,本人の許可を得て自身の著作としたものです.
-https://github.com/ryuichiueda/my_slides/tree/master/robosys_2022
-・このソフトウェアパッケージは3条項BSDライセンスの下,再頒布及び使用が許可されます.
+・このパッケージのコードは,下記のスライド(CC-BY-SA 4.0 by Ryuichi Ueda)のものを,本人の許可を得て自身の著作としたものです. \n
+https://github.com/ryuichiueda/my_slides/tree/master/robosys_2022 \n
+・このソフトウェアパッケージは3条項BSDライセンスの下,再頒布及び使用が許可されます. \n
 ・©2023 shirakawasojyu
