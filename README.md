@@ -24,7 +24,7 @@ $ cd robosys2023
 
 例②
 /robosys2023$ echo 512 256 256 > nums
-/robosys2023$ cat nums | tr ' ' ' \n' | ./plus
+/robosys2023$ cat nums | tr ' ' '\n' | ./plus
 1024, 10000000000, 11
 ```
 
